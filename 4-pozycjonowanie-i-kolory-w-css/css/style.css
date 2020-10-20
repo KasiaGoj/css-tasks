@@ -1,0 +1,81 @@
+div {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: absolute;
+  
+  }
+  .outer {
+     height: 155px;
+     width: 155px;
+     background-color: aquamarine;
+     position: absolute;
+   }
+  .round {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .gray {
+    background-color: gray;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  #top {
+    margin-top: 2.5px;
+  }
+  
+  #middle {
+    margin-top: 52.5px;
+  }
+  
+  #bottom {
+    margin-top: 102.5px;
+  }
+  
+  .first {
+    margin-left: 2.5px
+  }
+  .second {
+    margin-left: 52.5px;
+  }
+  
+  .third {
+    margin-left: 102.5px;
+  }
