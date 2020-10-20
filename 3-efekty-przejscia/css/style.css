@@ -1,0 +1,32 @@
+/* Zrób animację boxów z wykorzystaniem właściwości transition na :hover
+
+Stwórz trzy boxy w rozmiarze 150px na 150px
+Pierwszy z nich ma się zmieniać szerokość do 300px z wykorzystaniem efektu transition
+Drugi z nich ma się zmieniać wysokość do 300px z wykorzystaniem efektu transition
+Trzeci z nich ma się zmieniać wysokość i szerokość do 300px z wykorzystaniem efektu transition */
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.first {
+    background-color: tomato;
+}
+
+.first:hover {
+    width: 300px;
+}
+
+.second:hover{
+    height: 300px;
+}
+
+.third:hover {
+    width: 300px;
+    height: 300px;
+}
