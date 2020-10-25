@@ -1,0 +1,317 @@
+/* Czcionka:
+Rodzina fontów – Open Sans (waga 300, 400) – https://fonts.google.com/specimen/Open+Sans
+Wielkości:
+główny nagłówek 4.2em
+paragraf pod głównym nagłówkiem 1.3em
+nagłówki sekcji 1.9em
+nagłówki opisujące elementy portfolio 3em
+Kolory czcionek
+ciemnoszary (buttony, h2, tekst w header) – #333;
+jasnoszary (tekst w sekcji „O mnie”, ikony social na hover) – #777;
+niebieski – #007bff;
+Wysokość linii paragrafów w sekcji „O mnie” – 1.4
+Kolory tła:
+
+szary – #f2f1ed;
+niebieski – #007bff / rgba(0, 123, 255, 0.8)
+Inne elementy layoutu:
+
+padding sekcji – 120px dolny i górny
+maksymalna szerokość treści:
+1170px – przeglądarki o rozdzielczości powyżej 1200px
+992px – przeglądarki o rozdzielczości poniżej 1200px
+768px – przeglądarki o rozdzielczości poniżej 992px
+95% – przeglądarki o rozdzielczości poniżej 768px
+maksymalna szerokość  paragrafów w sekcji „O mnie” i formularza – 700px */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* elementy wspólne dla wszystkich sekcji */
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+.main-header {
+    height: 70vh;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-header .main-header-content {
+    text-align: center;
+}
+
+/* margin 0 - zdejmuje margines z h1, dzięki czemu element hr będzie do niego przylegał */
+.main-header .main-header-content h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header .main-header-content p {
+    color: #333;
+    font-size: 1.3em;
+    margin: 40px 0;
+}
+
+.main-header .main-header-content p span {
+    color: #007bff;
+}
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    transition: all .3s;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
+
+}
+
+h2 {
+    color: #333;
+    font-size: 1.9em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* elementy menu nawigacji */
+.main-menu {
+    background-color: #007bff;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-menu ul .menu-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-menu ul .menu-item a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    display: block;
+    transition: all .3s;
+}
+.main-menu ul .menu-item a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+/* header */
+.section-header {
+    margin-bottom: 75px;
+
+}
+
+/* sekcja 'O mnnie' */
+.about {
+    text-align: center;
+}
+
+.about-img {
+border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* sekcja 'Portfolio' */
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+.gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .gallery-item h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.8);
+    margin: 0;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 3em;
+    text-transform: uppercase;
+    opacity: 0 ;
+    transition: all .3s;
+}
+
+.gallery .gallery-item h3:hover {
+    opacity: 1;
+}
+
+/* Sekcja 'Kontakt' */
+.contact form {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact input[type="text"], .contact input[type="email"] {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.social-media{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.social-media .social-link  {
+    font-size: 2.5em;
+    color: #007bff;
+    transition: all .3s;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-media .social-link:hover {
+    color: #777;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+}
+
+/* Responsywność */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }    
+    .gallery .gallery-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    } 
+    .gallery .gallery-item {
+        flex-basis: 100%;
+    }   
+}
+
+@media (max-width: 480px) {
+    .main-header .main-header-content h1 {
+        font-size: 3em;
+    }
+
+    .about-img  {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"] {
+        flex-basis: 100%;
+    }
+
+
+    label[for="drop-nav"] {
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .main-menu ul {
+        display: none;
+    }
+
+    #drop-nav:checked + ul {
+        display: block;
+    }
+
+    .main-menu ul .menu-item {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+}

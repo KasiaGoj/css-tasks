@@ -1,0 +1,176 @@
+<!-- Czcionka:
+
+Rodzina fontów – Open Sans (waga 300, 400) – https://fonts.google.com/specimen/Open+Sans
+Wielkości:
+główny nagłówek 4.2em
+paragraf pod głównym nagłówkiem 1.3em
+nagłówki sekcji 1.9em
+nagłówki opisujące elementy portfolio 3em
+Kolory czcionek
+ciemnoszary (buttony, h2, tekst w header) – #333;
+jasnoszary (tekst w sekcji „O mnie”, ikony social na hover) – #777;
+niebieski – #007bff;
+Wysokość linii paragrafów w sekcji „O mnie” – 1.4
+Kolory tła:
+
+szary – #f2f1ed;
+niebieski – #007bff / rgba(0, 123, 255, 0.8)
+Inne elementy layoutu:
+
+padding sekcji – 120px dolny i górny
+maksymalna szerokość treści:
+1170px – przeglądarki o rozdzielczości powyżej 1200px
+992px – przeglądarki o rozdzielczości poniżej 1200px
+768px – przeglądarki o rozdzielczości poniżej 992px
+95% – przeglądarki o rozdzielczości poniżej 768px
+maksymalna szerokość  paragrafów w sekcji „O mnie” i formularza – 700px
+Zachowanie elementu portfolio o najechaniu -->
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- pobrana czcionka -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-content">
+            <h1>Front End Developer</h1>
+            <hr>
+            <p>HTML <span>•</span> CSS <span>•</span> JaVaScript</p>
+            <a href="" class="button">Dowiedz się więcej</a>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <label for="drop-nav">Menu</label>
+        <input type="checkbox" id="drop-nav">
+        <ul>
+            <li class="menu-item"><a href="#about">O mnie</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <div class="container">
+
+            <head class="section-header">
+                <h2>O mnie</h2>
+                <hr>
+            </head>
+            <img src="img/about.jpg" alt="zdjęcie kobiety" class="about-img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ex minima maxime iusto neque praesentium
+                eaque perferendis. In doloremque dignissimos libero eligendi mollitia impedit eum atque dolore culpa
+                consequuntur repudiandae, necessitatibus error quibusdam obcaecati unde, laborum expedita magni quam
+                quasi reprehenderit maxime velit. Esse sed neque aliquam. Iste, rem quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem omnis sint nulla maiores placeat
+                itaque optio quibusdam? Veritatis voluptate doloremque vel laudantium minus unde libero. Culpa possimus
+                similique quas, illo repellendus debitis porro a facere hic exercitationem velit in deleniti.</p>
+            <a href="" class="button">Moje portfolio</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+
+            <head class="section-header">
+                <h2>Portfolio</h2>
+                <hr>
+            </head>
+
+            <div class="gallery">
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-1.jpg" alt="photo-1">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-2.jpg" alt="photo-2">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-3.jpg" alt="photo-3">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-4.jpg" alt="photo-4">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-5.jpg" alt="photo-5">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-6.jpg" alt="photo-6">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-7.jpg" alt="photo-7">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-8.jpg" alt="photo-8">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-9.jpg" alt="photo-9">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-10.jpg" alt="photo-10">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-11.jpg" alt="photo-11">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="gallery-item">
+                    <img src="img/portfolio/photo-12.jpg" alt="photo-12">
+                    <h3>Projekt</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <head class="section-header">
+                <h2>Kontakt</h2>
+                <hr>
+            </head>
+
+            <form action="">
+                <input type="text" placeholder="Imię" name="name">
+                <input type="email" placeholder="E-mail" name="email">
+                <textarea name="message" placeholder="Wiadomość"></textarea>
+                <input type="submit" class="button">
+            </form>
+
+            <div class="social-media">
+                <a href="" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
